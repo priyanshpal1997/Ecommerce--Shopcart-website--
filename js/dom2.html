@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mytbl{
+        border-color:blueviolet ;
+        background-color: rgb(187, 184, 220);
+        color: black;
+        margin-bottom: 20px;
+    }
+    .myTable{
+
+        margin: auto;
+        
+        
+    }
+    th{
+     padding: 10px;
+    }
+ 
+    
+    .darkmode{
+        background-color: black;
+        color: white;
+    }
+
+
+</style>
+<body>
+    <button onclick="darkmode()"> Switch to Dark Mode</button>
+
+
+    <form action="JavaScript:void()" onsubmit="showData()">
+        <table width="50%" align="center" border="12" class="mytbl">
+            <tr>
+                <td> <label for=""> Name </label> </td>
+                <td> <input type="text" name="" id="name"></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Email </label></td>
+                <td> <input type="email" name="" id="myemail"></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Password </label></td>
+                <td> <input type="password" name="" id="pass"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <table class="myTable" align="center" border="5">
+        <tr>
+            <th>Name </th>
+            <th> Email </th>
+            <th> Password </th>
+        </tr>
+        <tbody id="mydata">
+
+        </tbody>
+    </table>
+
+    
+
+    <script>
+        function showData(){
+ let Empname, empemail, emppassword;
+  Empname= document.getElementById("name").value;
+  empemail=document.getElementById("myemail").value;
+  emppassword=document.getElementById("pass").value;
+
+  document.getElementById('mydata').innerHTML += `
+  <tr>
+
+    <td> ${Empname} </td>
+    <td> ${empemail} </td>
+    <td> ${emppassword}</td>
+
+
+
+
+    </tr>`
+
+        }
+
+    function darkmode(){
+        let dark=document.body;
+        dark.classList.toggle("darkmode");
+    }
+    </script>
+</body>
+</html>

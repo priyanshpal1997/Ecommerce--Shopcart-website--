@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyansh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3039bf198f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+
+        <nav> 
+            <img src="../images/priyanshlogofinal.jpg" class="logo">
+            <ul id="sidemenu">
+                 <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-xmark" on click="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>UI/UX DESIGNER</p>
+          <h1>Hi, I'm <span> Priyansh</span><br>from Delhi</h1>
+
+        </div>
+    </div>
+</div>
+
+<!-- About section -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../images/facebook.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A dynamic professional with experience in IT Support & Application troubleshooting
+                    for B2B & B2C clients. Hustling towards the journey of a successful software
+                    engineer. I want to gain experience as a full-stack developer in a tech organization
+                    where I can add value and prove to be an asset. Now I am looking toward working
+                    in the core IT sector to enhance and groom myself professionally as well as
+                    technically</p>
+
+                    <div class="tab-titles"> 
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sep 2022- Present</span><br>Senior Technical Support Engineer at QueueBuster POS</li>
+                            <li><span>April 2020-June 2022</span><br>Technical Support Associate at IBM & Kyndryl India</li>
+                            <li><span>Feb 2019- March 2020</span><br>Fraud Analyst at Paytm Payments Bank</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015-2019</span><br>B.tech(Computer Science) Graduate => 71%</li>
+                            <li><span>2014-2015</span><br>Intermediate => 79.6%</li>
+                            <li><span>2012-2013</span><br>High School => 7.4 CGPA</li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ------Services------ -->
+
+<div id="services">
+ <div id="container">
+
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Get online fast with our professional web design service. From simple to complex, our website design team will create, host, and update the site for you.</p>
+             <a href="#">Learn More</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>We help brands create engaging customer journeys & digital experiences for their customers. 
+               We offer strong user experience (UX) design and web design strategies.   Contact us now.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2> 
+        <p>The idea is to make an information structure and create an interactive pattern out of it. 
+            It helps in the UI and UX development process, while clickable prototypes are analyzed and 
+            included.</p>
+            <a href="#">Learn More</a>
+
+        </div>
+
+
+          
+    </div>
+</div>
+
+</div>
+
+<!-- <------Portfolio------>
+
+<div id="portfolio">
+    <div id="container">
+
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+
+            <div class="work">
+                <img src="../images/new1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>This Application connects you globally.
+                        Download from Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="../images/new2.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>We provide beats on which you can groove on.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../images/new3.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Bringing marketplace on fingertips.
+                        Download from Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                 </div>
+                  </div>
+                  
+                </div>
+                <a href="#" class="btn">See More</a>
+
+       
+
+
+
+
+</div>
+</div>
+
+
+<!-- .........contact....... -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            
+            <h1 class="sub-title">Contact Me</h1>
+            <p ><i class="fa-sharp fa-solid fa-paper-plane"></i>priyanshprofessional@gmail.om</p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i>8802390385</p>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/PRIYANSHPAL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ipriyansh.pal/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/PriyanshPal3"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/priyanshpal/"><i class="fa-brands fa-square-twitter"></i></a>
+                
+            </div>
+            <a href="../images/Priyansh CV MAY 2023.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+
+
+
+                </form>
+
+
+
+            </div>
+        </div>  
+    </div>
+    <div class="copyright">
+
+        <p> Copyright <i class="fa-sharp fa-regular fa-copyright"></i> Priyansh. This is my first Website Portfolio <i class="fa-sharp fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for (tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+        for(tabcontent of tabcontents){
+            tabcontent.classList. remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+<script>
+  
+  var sidemenu= document.getElementById("sidemenu");
+  
+  function openmenu(){
+    sidemenu.style.right="0";
+
+  }
+
+  function closemenu(){
+    sidemenu.style.right="-200px";
+    
+  }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const stu_name=[ "John","Mike","lucas","Peter","Harvey"];
+         //for in loop  
+        for (name in stu_name){
+            document.write(`<p> Welcome to the club ${stu_name[name]}</p>`)
+        }
+         //for of loop  
+        for (name of stu_name){
+
+            document.write(`<h3> Welcome ${name}</h3>`)
+        }
+        // map func
+        stu_name.map((val)=>{
+            document.write(`<h2> ${val} Welcome to the JS world!</h2>`)
+
+
+
+        })
+        // arrow func
+        stu_name.map((val)=>{
+            document.write(`<h1> ${val}</h1>`)
+
+
+        })
+    </script>
+</body>
+</html>
